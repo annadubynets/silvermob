@@ -1,0 +1,244 @@
+@import "./bootstrap.min.css";
+@import "./owl.carousel.min.css";
+@import "fonts.css";
+h1 {
+  font-weight: 400;
+  font-size: 32px;
+  color: #FFFFFF;
+  margin-bottom: 56px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+}
+
+p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-secondary {
+  color: #6B6A6A !important;
+}
+
+.text-dark {
+  color: #000000 !important;
+}
+
+.bg-muted {
+  background-color: #F0F0F0 !important;
+}
+
+.bg-primary {
+  background-color: #4C6E94 !important;
+}
+
+.bg-secondary {
+  background-color: #383838 !important;
+}
+
+.rounded {
+  border-radius: 5px !important;
+}
+
+.border-end {
+  border-right: 1px solid #000000 !important;
+}
+
+.shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
+
+.py-90px {
+  padding: 90px 0;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: #F0F0F0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+.offer {
+  background: url("../images/main-bg.png") center no-repeat;
+  background-size: 100% 100%;
+  padding: 93px 0 130px;
+}
+
+.footer a {
+  display: block;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.btn-primary {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px 26px;
+  color: #FFFFFF;
+  background: #3C83CB;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #4C6E94;
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  box-shadow: none !important;
+}
+
+.navbar {
+  padding: 17px 0;
+  background-color: #383838;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.navbar a {
+  font-size: 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #F0F0F0;
+}
+.navbar .navbar-brand-img {
+  height: 24px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 0 8px;
+  display: inline-block;
+}
+@media (max-width: 992px) {
+  .navbar-light .navbar-nav .nav-link {
+    color: #FFFFFF;
+  }
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  font-weight: 600;
+  color: #F0F0F0;
+}
+.navbar-light .navbar-nav .nav-link .hover-effect {
+  position: relative;
+}
+.navbar-light .navbar-nav .nav-link .hover-effect:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  background-color: #3C83CB;
+  transition: 0.5s;
+  position: absolute;
+  bottom: -9px;
+}
+.navbar-light .navbar-nav .nav-link .hover-effect:hover:after {
+  width: 100%;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: #000000 !important;
+  font-weight: 700;
+  width: 100%;
+}
+.navbar-light .navbar-nav .nav-link.active .hover-effect::after {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .navbar-light .navbar-nav {
+    margin-top: 20px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    padding: 15px;
+  }
+  .navbar-light .navbar-nav .nav-link .hover-effect:after {
+    display: none;
+  }
+}
+.navbar .navbar-toggler,
+.navbar .navbar-brand {
+  z-index: 1000;
+}
+@media (max-width: 992px) {
+  .navbar .navbar-collapse {
+    color: #FFFFFF;
+    background-color: #383838;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center !important;
+  }
+  .navbar .navbar-collapse.show {
+    opacity: 1.5;
+  }
+  .navbar .navbar-collapse.collapse {
+    opacity: 0;
+    display: flex;
+    pointer-events: none;
+  }
+  .navbar .navbar-collapse.collapsing[style*=height] {
+    opacity: 1;
+    height: 100vh !important;
+  }
+  .navbar .navbar-collapse.collapsing {
+    opacity: 0;
+    height: 100vh;
+  }
+  .navbar .navbar-collapse.collapse.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .navbar .navbar-collapse .navbar-nav {
+    margin-right: initial !important;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+.services {
+  background-color: #4C6E94;
+  clip-path: polygon(0% 13%, 100% 0%, 100% 100%, 0% 85%);
+  padding: 95px 0;
+}
+
+.partners {
+  background-color: #FFFFFF;
+  clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 115px 0 70px;
+}
+.partners img {
+  height: 40px;
+  filter: grayscale(1);
+  opacity: 0.8;
+}
+.partners img:hover {
+  filter: none !important;
+}
+
+/*# sourceMappingURL=style.css.map */
