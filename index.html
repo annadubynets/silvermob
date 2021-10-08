@@ -11,7 +11,7 @@
 
 <body>
     <main>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg main-navbar navbar-light fixed-top">
             <div class="container">
                 <a class="navbar-brand align-self-center me-lg-5 me-4" href="./index.html">
                     <img src="images/logo.svg" class="navbar-brand-img" alt="logo">
@@ -32,12 +32,17 @@
                             <a class="nav-link" href="#">Company</a>
                         </li>
                     </ul>
-                    <a href="#" class="ms-auto">Sign in</a>
+                    <ul class="navbar-nav ms-lg-auto ms-0 order-lg-0 order-1 me-4">
+                        <li class="nav-item align-self-center">
+                            <a href="#" class="ms-auto">Sign in</a>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
         </nav>
         <div class="hero position-relative">
+            <div class="bg-image"></div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
@@ -45,7 +50,7 @@
                         <a href="#" class="btn btn-primary">Get started</a>
                     </div>
                     <div class="col-lg-6 text-end">
-                        <img src="images/mobile.svg" alt="Mobile" style="position: absolute; right: 80px; bottom: -25px">
+                        <img src="images/mobile.svg" alt="Mobile" class="hero-mobile-decor">
                     </div>
                 </div>
             </div>
@@ -174,7 +179,7 @@
                 <div class="col-lg-12">
                     <h2 class="mb-4">Company</h2>
                     <div class="d-flex bg-white shadow rounded p-4 mb-4">
-                        <img src="images/team-1.png" alt="Team user">
+                        <img src="images/team-1.png" class="img-object-fit-contain" alt="Team user">
                         <div class="ps-5">
                             <p class="pb-4">Since 2014 we are building an advanced ecosystem for publishers. Our mission is to build effective, transparent and easy-to-use services to help our clients to focus on creativity, not on selling ads.</p>
                             <p class="text-muted">Alexey Zhukov, Co-founder</p>
@@ -185,7 +190,7 @@
                             <p class="pb-4">Since 2014 we are building an advanced ecosystem for publishers. Our mission is to build effective, transparent and easy-to-use services to help our clients to focus on creativity, not on selling ads.</p>
                             <p class="text-muted">Anton Nikityuk, Co-founder</p>
                         </div>
-                        <img src="images/team-2.png" alt="Team user">
+                        <img src="images/team-2.png" class="img-object-fit-contain" alt="Team user">
                     </div>
                 </div>
             </div>

@@ -17,8 +17,31 @@
     }
     
     .hero {
-        background: url('../images/main-bg.png') center no-repeat;
-        background-size: cover;
+        position: relative;
+
+        .bg-image {
+            background: url('../images/main-bg.png') center no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            filter: blur(1px);
+            -webkit-filter: blur(1px); 
+            z-index: -1;
+        }
+
+        .hero-mobile-decor {
+            position: absolute;
+            right: 80px;
+            bottom: -25px;
+
+            @media (max-width: 576px) {
+                right: 15px;
+            }
+        }
+        
         padding: 140px 0;
         min-height: 500px;
     }
@@ -51,7 +74,6 @@
     
     .navbar {
         padding: 17px 0;
-        background-color: $darkgrey;
         .navbar-toggler {
             &:focus {
                 box-shadow: none!important;
@@ -67,6 +89,10 @@
         }
         .navbar-brand-img {
             height: 24px;
+        }
+
+        &.main-navbar.scrolled {
+            background-color: $darkgrey;
         }
     }
     
@@ -160,7 +186,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                transition: opacity 0.35s ease;
+                // transition: opacity 0.35s ease;
                 display: flex;
                 flex-direction: column;
                 align-content: center;

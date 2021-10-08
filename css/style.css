@@ -60,6 +60,10 @@ p {
   padding: 90px 0;
 }
 
+.img-object-fit-contain {
+  object-fit: contain;
+}
+
 body {
   font-family: "Roboto";
   background-color: #F0F0F0;
@@ -75,10 +79,31 @@ a {
 }
 
 .hero {
-  background: url("../images/main-bg.png") center no-repeat;
-  background-size: cover;
+  position: relative;
   padding: 140px 0;
   min-height: 500px;
+}
+.hero .bg-image {
+  background: url("../images/main-bg.png") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  z-index: -1;
+}
+.hero .hero-mobile-decor {
+  position: absolute;
+  right: 80px;
+  bottom: -25px;
+}
+@media (max-width: 576px) {
+  .hero .hero-mobile-decor {
+    right: 15px;
+  }
 }
 
 .footer a {
@@ -107,7 +132,6 @@ a {
 
 .navbar {
   padding: 17px 0;
-  background-color: #383838;
 }
 .navbar .navbar-toggler:focus {
   box-shadow: none !important;
@@ -122,6 +146,9 @@ a {
 }
 .navbar .navbar-brand-img {
   height: 24px;
+}
+.navbar.main-navbar.scrolled {
+  background-color: #383838;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -205,7 +232,6 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    transition: opacity 0.35s ease;
     display: flex;
     flex-direction: column;
     align-content: center;
