@@ -16,10 +16,11 @@
         cursor: pointer;
     }
     
-    .offer {
+    .hero {
         background: url('../images/main-bg.png') center no-repeat;
-        background-size: 100% 100%;
-        padding: 93px 0 130px;
+        background-size: cover;
+        padding: 140px 0;
+        min-height: 500px;
     }
     
     .footer {
