@@ -59,6 +59,11 @@ p {
 .py-90px {
   padding: 90px 0;
 }
+@media (max-width: 768px) {
+  .py-90px {
+    padding: 60px 0;
+  }
+}
 
 .img-object-fit-contain {
   object-fit: contain;
@@ -266,14 +271,24 @@ a {
 
 .services {
   background-color: #4C6E94;
-  clip-path: polygon(0% 13%, 100% 0%, 100% 100%, 0% 85%);
+  clip-path: polygon(0% 12%, 100% 0%, 100% 100%, 0% 90%);
   padding: 95px 0;
+}
+@media (max-width: 768px) {
+  .services {
+    clip-path: polygon(0% 8%, 100% 0%, 100% 100%, 0% 92%);
+  }
 }
 
 .partners {
   background-color: #FFFFFF;
   clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
   padding: 115px 0 70px;
+}
+@media (max-width: 768px) {
+  .partners {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 95%);
+  }
 }
 .partners img {
   height: 40px;
