@@ -174,6 +174,22 @@ a {
     display: none;
   }
 }
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler .toggler-expanded {
+  display: block;
+}
+.navbar-toggler .toggler-collapsed {
+  display: none;
+}
+.navbar-toggler.collapsed .toggler-expanded {
+  display: none;
+}
+.navbar-toggler.collapsed .toggler-collapsed {
+  display: block;
+}
+
 .navbar .navbar-toggler,
 .navbar .navbar-brand {
   z-index: 1000;

@@ -121,6 +121,26 @@
         }
     }
     
+    .navbar-toggler {
+        &:focus {
+            box-shadow: none;
+        }
+        .toggler-expanded {
+            display: block;
+        }
+        .toggler-collapsed {
+            display: none;
+        }
+        &.collapsed {
+            .toggler-expanded {
+                display: none;
+            }
+            .toggler-collapsed {
+                display: block;
+            }
+        }
+    }
+    
     .navbar {
         .navbar-toggler,
         .navbar-brand {
